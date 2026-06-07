@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yohan Marques — Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">YM</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <div id="hero">
+      <div class="hero-tag">Web Developer in Training</div>
+      <h1>Yohan<br /><em>Marques</em></h1>
+      <p class="hero-desc">
+        First-year DAW student passionate about building web experiences,
+        learning new technologies, and solving problems through code.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View my work</a>
+        <a href="#contact" class="btn-secondary">Get in touch</a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        Scroll
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-label">About me</div>
+      <h2>A bit about<br />who I am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            Hi! I'm Yohan Marques, a first-year student in the
+            <strong>DAW (Web Application Development)</strong> programme. I'm
+            based in Valencia, Spain, and I'm building my skills in both
+            front-end development and networking.
+          </p>
+          <p>
+            I'm especially interested in JavaScript, HTML/CSS, and server-side
+            configuration — and I love the challenge of turning complex problems
+            into simple, working solutions.
+          </p>
+          <div class="skills-list">
+            <span class="skill-tag">HTML & CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Processing</span>
+            <span class="skill-tag">MikroTik</span>
+            <span class="skill-tag">Networking</span>
+            <span class="skill-tag">GNS3</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+        <div>
+          <div class="info-card">
+            <h3>Quick info</h3>
+            <div class="info-row">
+              <span>Name</span><span>Yohan Marques</span>
+            </div>
+            <div class="info-row"><span>Course</span><span>1r DAW</span></div>
+            <div class="info-row">
+              <span>Location</span><span>Valencia, Spain</span>
+            </div>
+            <div class="info-row">
+              <span>Languages</span><span>Spanish, Valencian, English, French</span>
+            </div>
+            <div class="info-row">
+              <span>Status</span><span>Open to opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-label">Portfolio</div>
+      <h2>Selected<br />projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-thumb thumb-1">DINO</div>
+          <div class="project-body">
+            <div class="project-cat">Game Development</div>
+            <h3>Dino Runner</h3>
+            <p>
+              A side-scrolling endless runner game built in Processing/Java.
+              Features collision detection, score tracking, and increasing
+              difficulty.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb thumb-2">NET</div>
+          <div class="project-body">
+            <div class="project-cat">Networking</div>
+            <h3>GNS3 Network Lab</h3>
+            <p>
+              Multi-router lab with MikroTik and Cisco devices, configuring
+              VLANs, DHCP, NAT, and firewall rules for a simulated enterprise
+              network.
+            </p>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb thumb-3">WEB</div>
+          <div class="project-body">
+            <div class="project-cat">Web Development</div>
+            <h3>DOM & JS Exercises</h3>
+            <p>
+              A series of 24 JavaScript exercises covering DOM manipulation,
+              localStorage, JSON rendering, and a character sheet role-playing
+              game UI.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-wrap">
+        <div class="contact-intro">
+          <div class="section-label">Contact</div>
+          <h2>Let's talk</h2>
+          <p>
+            Have a question, want to collaborate, or just want to say hello?
+            Feel free to reach out — I'll get back to you as soon as I can.
+          </p>
+          <div class="contact-detail">📍 <strong>Valencia, Spain</strong></div>
+          <div class="contact-detail">🎓 <strong>1r DAW student</strong></div>
+          <div class="contact-detail">
+            💻 <strong>Available for internships</strong>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Your name</label>
+            <input type="text" placeholder="John Doe" id="f-name" />
+          </div>
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" placeholder="john@example.com" id="f-email" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              placeholder="Write your message here..."
+              id="f-msg"
+            ></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <span>Yohan Marques</span>
+      <p>© 2025 · Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        const name = document.getElementById("f-name").value.trim();
+        const email = document.getElementById("f-email").value.trim();
+        const msg = document.getElementById("f-msg").value.trim();
+        if (!name || !email || !msg) {
+          alert("Please fill in all fields.");
+          return;
+        }
+        alert("Thank you, " + name + "! Your message has been sent.");
+        document.getElementById("f-name").value = "";
+        document.getElementById("f-email").value = "";
+        document.getElementById("f-msg").value = "";
+      }
+    </script>
+  </body>
+</html>
